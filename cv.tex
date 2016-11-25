@@ -1,0 +1,113 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[grey]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+% character encoding
+\usepackage[utf8]{inputenc}    
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\recomputelengths              
+
+% multiple bibliographies
+\usepackage{multibib}
+\newcites{cf}{Refereed Conference Publications}
+\newcites{ws}{Refereed Workshop Publications}
+\newcites{tr}{Technical Reports}
+
+\title{}
+
+% personal data
+\firstname{eric}
+\familyname{schkufza}
+\address{3401 hillview ave}{palo alto ca 94304}   
+\mobile{(734) 730-4002}                    					
+\email{eric.schkufza@gmail.com}                 
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Research}
+\cvline{}{Applying the tools of large-scale data analysis and machine learning to the design of optimizing compilers. My work focuses on the analysis and optimization of low-level machine code in the absence of its original source.}
+
+\section{Education}
+\cventry{2008--2015}{Ph.D., Computer Science}{Stanford University}{Stanford CA}{}{Stochastic Optimization of x86\_64 Binaries -- Advised by Prof. Alex Aiken} 
+\cventry{2006--2008}{M.S., Computer Science}{Stanford University}{Stanford CA}{}{Artificial Intelligence Concentration} 
+\cventry{2001--2005}{B.S.E., Computer Science}{The University of Michigan}{Ann Arbor MI}{}{} 
+\cventry{2001--2005}{B.S.E., Computer Engineering}{The University of Michigan}{Ann Arbor MI}{}{} 
+
+\section{Professional Experience}
+\cventry{2015--Present}{Researcher}{VMware Research Group}{Palo Alto CA}{}{Bringing innovation in computer science in core areas of importance to VMware}
+\cventry{2012--2015}{Expert Consultant}{Feinberg Day Alberti \& Thompson LLP}{Palo Alto CA}{}{Litigating intellectual property law}
+\cventry{2010--2011}{Research Intern}{Microsoft Research}{Redmond WA}{}{Improving the throughput of the Bing search engine}
+\cventry{2005}{Junior Software Developer}{Bloomberg, L.P.}{New York NY}{}{Implementing search tools for financial news feeds}             
+
+\section{Teaching Experience}
+\cventry{2012}{Course Assistant}{CS243 Program Analysis and Optimizations}{}{}{Taught by Prof. Monica Lam, Stanford University}
+\cventry{2011}{Course Assistant}{CS242 Programming Languages}{}{}{Taught by Prof. John Mitchell, Stanford University}
+\cventry{2008}{Course Assistant}{CS227b General Game Playing}{}{}{Taught by Prof. Michael Genesereth, Stanford University}
+\cventry{2005}{Teaching Assistant}{EECS270 Introduction to Logic Design}{}{}{Taught by Prof. Igor Markov, The University of Michigan}
+
+\section{Advising Experience}
+\cventry{2016}{Berkeley Churchill}{VMware Intern}{}{}{Automatically identifying third-party components in x86\_64 binaries}
+
+\section{Professional Service}
+\cventry{2017}{Program Committee}{World Wide Web Conference}{}{}{WWW 2017}
+\cventry{2016}{Program Committee}{Asia Pacific Workshop on Systems}{}{}{ApSys 2016}
+\cventry{2008}{Co-Chair}{AAAI General Game Playing Competition}{}{}{AAAI 2008}
+\cventry{2007}{Co-Chair}{AAAI General Game Playing Competition}{}{}{AAAI 2007}
+
+\section{Honors and Appointments}
+\cventry{2013--2014}{Guest Critic}{Architecture Studio 4}{}{}{Department of Art and Architecture, University of San Francisco}
+\cventry{2013}      {Recipient}{Ole Agesen Graduate Fellowship}{}{}{VMware}
+%\cventry{2012}      {Contributor}{La Sportiva Futura Climbing Shoes Review}{}{}{MensFitness.com}
+\cventry{2011--2012}{DJ}{90.1 FM KZSU Stanford}{}{}{Stanford University}
+\cventry{2008}      {Recipient}{Computer Science Graduate Fellowship}{}{}{Stanford University}
+\cventry{2004--2005}{Officer}{Eta Kappa Nu, Electrical Engineering Honor Society}{}{}{The University of Michigan}
+\cventry{2004--2005}{Recipient}{Angell Hall Academic Scholarship Award}{}{}{The University of Michigan}
+\cventry{2001--2005}{Recipient}{Dean's List and University Honors}{}{}{The University of Michigan}
+\cventry{2001--2005}{Recipient}{Richard Earhart Academic Scholarship}{}{}{The University of Michigan}
+
+\section{Patents}
+\cventry{2016}{US 9355470 B2}{Method and System for Interactive Layout}{}{}{Paul Merrell, Vladlen Koltun, Eric Schkufza, Maneesh Agrawala}
+
+\section{Case Work}
+\cventry{2013--2014}{Code Review}{Case No. 1:13cv740-AJT/TRJ}{}{}{Intellectual Ventures I LLC and Intellectual Ventures II LLC, Plaintiffs, v. Capital One Financial Corporation, Capital One Bank (USA), N.A., and Capital One, N.A., Defendants}
+\cventry{2013--2014}{Code Review}{Case No. 13-cv-61358-rosenbaum/hunt}{}{}{Intellectual Ventures I LLC and Intellectual Ventures II LLC, Plaintiffs, v. Motorola Mobility LLC, Defendant}
+\cventry{2012--2013}{Code Review}{Case No. 1:11-cv-908-SLR}{}{}{Intellectual Ventures I LLC and Intellectual Ventures II LLC, Plaintiffs v. Motorola Mobility, Inc., Defendant}
+
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{cv}   
+
+\vspace{1em}
+
+\nocitecf{*}
+\bibliographystylecf{unsrt}
+\bibliographycf{conf}   
+
+\vspace{1em}
+
+\nocitews{*}
+\bibliographystylews{unsrt}
+\bibliographyws{ws}   
+
+\vspace{1em}
+
+\nocitetr{*}
+\bibliographystyletr{unsrt}
+\bibliographytr{tr}   
+
+\end{document}
